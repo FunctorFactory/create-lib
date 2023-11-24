@@ -1,0 +1,8 @@
+{
+  "mode": "pre",
+  "tag": "next",
+  "initialVersions": {
+    "create-lib": "0.0.1"
+  },
+  "changesets": []
+}
