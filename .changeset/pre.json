@@ -4,5 +4,7 @@
   "initialVersions": {
     "create-lib": "0.0.1"
   },
-  "changesets": []
+  "changesets": [
+    "brown-wolves-tell"
+  ]
 }
