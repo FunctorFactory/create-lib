@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "prepare": "pnpm run clean && pnpm run build",
-    "update-version": "changeset version && pnpm install --no-fozen-lockfile",
+    "update-version": "changeset version && pnpm install --no-frozen-lockfile",
     "lint": "ESLINT_USER_FLAT_CONFIG=true eslint src test",
     "lint-fix": "eslint src test --fix",
     "build": "tsup",
