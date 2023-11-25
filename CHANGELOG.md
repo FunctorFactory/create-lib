@@ -1,5 +1,13 @@
 # create-lib
 
+## 0.1.0-next.3
+
+### Patch Changes
+
+- [`058889f`](https://github.com/FunctorFactory/create-lib/commit/058889f4af5fa42a997a59e778dfe7f504b2af87) Thanks [@j-shilling](https://github.com/j-shilling)! - FIX permissions for the changesets action
+
+- [`595a6b5`](https://github.com/FunctorFactory/create-lib/commit/595a6b58ec4d1814ff8cd1dd1daf461ce8109a8e) Thanks [@j-shilling](https://github.com/j-shilling)! - Add token permissions for github pages
+
 ## 0.1.0-next.2
 
 ### Patch Changes
