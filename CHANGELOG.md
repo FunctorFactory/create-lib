@@ -1,5 +1,11 @@
 # create-lib
 
+## 0.1.0-next.4
+
+### Patch Changes
+
+- [#5](https://github.com/FunctorFactory/create-lib/pull/5) [`2ad1bd1`](https://github.com/FunctorFactory/create-lib/commit/2ad1bd1806dec88c8e48b7284c4ae2d62a39fedf) Thanks [@j-shilling](https://github.com/j-shilling)! - Add README and LICENSE
+
 ## 0.1.0-next.3
 
 ### Patch Changes
