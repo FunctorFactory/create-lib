@@ -1,0 +1,28 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "dictionaries": [
+    "en_US",
+    "softwareTerms",
+    "companies",
+    "misc",
+    "typescript",
+    "node",
+    "npm",
+    "filetypes"
+  ],
+  "words": ["functorfactory", "tsup", "quicklinks"],
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/.git/**",
+    "**/*.tsbuildinfo",
+    "tmp/",
+    "**/docs/",
+    "pnpm-lock.yaml",
+    "flake.*",
+    "cspell.json",
+    "package.json",
+    "**/.tsbuildinfo/**"
+  ]
+}
