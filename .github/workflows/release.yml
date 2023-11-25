@@ -36,7 +36,7 @@ jobs:
   pages-build:
     name: Build Docs
     needs: release
-    if: needs.release.outputs.published
+    if: needs.release.outputs.published == 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
