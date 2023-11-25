@@ -1,5 +1,11 @@
 # create-lib
 
+## 0.1.0-next.2
+
+### Patch Changes
+
+- [`90ac5fa`](https://github.com/FunctorFactory/create-lib/commit/90ac5fa664b6101ce1c1697f6fc706217039db32) Thanks [@j-shilling](https://github.com/j-shilling)! - Map output of changeset step to job output
+
 ## 0.1.0-next.1
 
 ### Patch Changes
