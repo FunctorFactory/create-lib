@@ -2,9 +2,11 @@
   "mode": "pre",
   "tag": "next",
   "initialVersions": {
-    "create-lib": "0.0.1"
+    "create-lib": "0.0.1",
+    "@functorfactory/create-lib": "0.1.0-next.0"
   },
   "changesets": [
-    "brown-wolves-tell"
+    "brown-wolves-tell",
+    "real-spiders-cry"
   ]
 }

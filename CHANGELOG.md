@@ -1,5 +1,11 @@
 # create-lib
 
+## 0.1.0-next.1
+
+### Patch Changes
+
+- [`1c70300`](https://github.com/FunctorFactory/create-lib/commit/1c70300173bb980d1be38f4d99430b7c3d049bc4) Thanks [@j-shilling](https://github.com/j-shilling)! - FIX workflow pages-build trigger
+
 ## 0.1.0-next.0
 
 ### Minor Changes
