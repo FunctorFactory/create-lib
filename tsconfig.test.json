@@ -6,6 +6,10 @@
     "rootDir": ".",
     "noEmit": true,
     "noUnusedLocals": false,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "paths": {
+      "@functorfactory/create-lib": ["src/index.ts"],
+      "@functorfactory/create-lib/*": ["src/*"]
+    }
   }
 }
