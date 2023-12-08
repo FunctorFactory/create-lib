@@ -1,6 +1,9 @@
-import { expect, test } from '@jest/globals';
-import { double } from '@functorfactory/create-lib';
+import { describe, expect, it } from '@jest/globals';
 
-test('double', () => {
-  expect(double(1)).toBe(2);
+import { double } from '../src/index';
+
+describe('double', () => {
+  it('should double a number', () => {
+    expect(double(1)).toBe(2);
+  });
 });

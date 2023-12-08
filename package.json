@@ -15,7 +15,8 @@
     "clean": "rimraf dist .tsbuildinfo",
     "docgen": "docgen",
     "format": "prettier --check .",
-    "format-fix": "prettier --write ."
+    "format-fix": "prettier --write .",
+    "spell": "cspell ."
   },
   "prettier": "@functorfactory/prettier-config",
   "packageManager": "pnpm@8.10.5",
@@ -42,7 +43,6 @@
     "@functorfactory/eslint-config": "^0.0.4",
     "@functorfactory/prettier-config": "^0.0.3",
     "@jest/globals": "^29.7.0",
-    "@types/jest": "^29.5.8",
     "@types/node": "^20.9.2",
     "cspell": "^8.0.0",
     "eslint": "^8.54.0",
