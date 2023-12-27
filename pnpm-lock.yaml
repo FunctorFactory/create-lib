@@ -71,6 +71,9 @@ devDependencies:
   typescript-language-server:
     specifier: ^4.1.2
     version: 4.1.2
+  vscode-json-languageserver:
+    specifier: ^1.3.4
+    version: 1.3.4
 
 packages:
 
@@ -2437,6 +2440,13 @@ packages:
     hasBin: true
     dev: true
 
+  /agent-base@4.3.0:
+    resolution: {integrity: sha512-salcGninV0nPrwpGNn4VTXBb1SOuXQBiqbrNXoeizJsHrsL6ERFM2Ne3JUSBWRE6aeNJI2ROP/WEEIDUiDe3cg==}
+    engines: {node: '>= 4.0.0'}
+    dependencies:
+      es6-promisify: 5.0.0
+    dev: true
+
   /ajv@6.12.6:
     resolution: {integrity: sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==}
     dependencies:
@@ -3254,6 +3264,17 @@ packages:
     resolution: {integrity: sha512-68s5jYdlvasItOJnCuI2Q9s4q98g0pCyL3HrcKJu8KNugUl8ahgmZYg38ysLTgQjjXX3H8CJLkAvWrclWfcalw==}
     dev: true
 
+  /debug@3.1.0:
+    resolution: {integrity: sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+    dependencies:
+      ms: 2.0.0
+    dev: true
+
   /debug@3.2.7:
     resolution: {integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==}
     peerDependencies:
@@ -3570,6 +3591,16 @@ packages:
       is-callable: 1.2.7
       is-date-object: 1.0.5
       is-symbol: 1.0.4
+    dev: true
+
+  /es6-promise@4.2.8:
+    resolution: {integrity: sha512-HJDGx5daxeIvxdBxvG2cb9g4tEvwIk3i8+nhX0yGrYmZUzbkdg8QbDevheDB8gd0//uPj4c1EQua8Q+MViT0/w==}
+    dev: true
+
+  /es6-promisify@5.0.0:
+    resolution: {integrity: sha512-C+d6UdsYDk0lMebHNR4S2NybQMMngAOnOwYBQjTOiv0MkoJMP0Myw2mgpDLBcpfCmRLxyFqYhS/CfOENq4SJhQ==}
+    dependencies:
+      es6-promise: 4.2.8
     dev: true
 
   /esbuild@0.18.20:
@@ -4643,6 +4674,26 @@ packages:
     resolution: {integrity: sha512-H2iMtd0I4Mt5eYiapRdIDjp+XzelXQ0tFE4JS7YFwFevXXMmOp9myNrUvCg0D6ws8iqkRPBfKHgbwig1SmlLfg==}
     dev: true
 
+  /http-proxy-agent@2.1.0:
+    resolution: {integrity: sha512-qwHbBLV7WviBl0rQsOzH6o5lwyOIvwp/BdFnvVxXORldu5TmjFfjzBcWUWS5kWAZhmv+JtiDhSuQCp4sBfbIgg==}
+    engines: {node: '>= 4.5.0'}
+    dependencies:
+      agent-base: 4.3.0
+      debug: 3.1.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /https-proxy-agent@2.2.4:
+    resolution: {integrity: sha512-OmvfoQ53WLjtA9HeYP9RNrWMJzzAz1JGaSFr1nijg0PVR1JaD/xbJq1mdEIIlxGpXp9eSe/O2LgU9DJmTPd0Eg==}
+    engines: {node: '>= 4.5.0'}
+    dependencies:
+      agent-base: 4.3.0
+      debug: 3.2.7
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /human-id@1.0.2:
     resolution: {integrity: sha512-UNopramDEhHJD+VR+ehk8rOslwSfByxPIZyJRfV739NDhN5LF1fa1MqnzKm2lGTQRjNrjK19Q5fhkgIfjlVUKw==}
     dev: true
@@ -5639,6 +5690,10 @@ packages:
     hasBin: true
     dev: true
 
+  /jsonc-parser@3.2.0:
+    resolution: {integrity: sha512-gfFQZrcTc8CnKXp6Y4/CBT3fTc0OVuDofpre4aEeEpSBPV5X5v4+Vmx+8snU7RLPrNHPKSgLxGo9YuQzz20o+w==}
+    dev: true
+
   /jsonfile@4.0.0:
     resolution: {integrity: sha512-m6F1R3z8jjlf2imQHS2Qez5sjKWQzbuuhuJ/FKYFRZvPE3PuHcSMVZzfsLhGVOkfd20obL5SWEBew5ShlquNxg==}
     optionalDependencies:
@@ -6020,6 +6075,10 @@ packages:
   /mixme@0.5.10:
     resolution: {integrity: sha512-5H76ANWinB1H3twpJ6JY8uvAtpmFvHNArpilJAjXRKXSDDLPIMoZArw5SH0q9z+lLs8IrMw7Q2VWpWimFKFT1Q==}
     engines: {node: '>= 8.0.0'}
+    dev: true
+
+  /ms@2.0.0:
+    resolution: {integrity: sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A==}
     dev: true
 
   /ms@2.1.2:
@@ -6603,6 +6662,16 @@ packages:
   /req-all@1.0.0:
     resolution: {integrity: sha512-k8RAnaq+vrezRAZWQlI6sbwGIlII699fnPYamb8K0UVgQel3Wb6YgPfpGyair00vmArXNag1vr5PjwDQBE7DUA==}
     engines: {node: '>=4'}
+    dev: true
+
+  /request-light@0.4.0:
+    resolution: {integrity: sha512-fimzjIVw506FBZLspTAXHdpvgvQebyjpNyLRd0e6drPPRq7gcrROeGWRyF81wLqFg5ijPgnOQbmfck5wdTqpSA==}
+    dependencies:
+      http-proxy-agent: 2.1.0
+      https-proxy-agent: 2.2.4
+      vscode-nls: 4.1.2
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /require-directory@2.1.1:
@@ -7565,14 +7634,49 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
+  /vscode-json-languageserver@1.3.4:
+    resolution: {integrity: sha512-+ghebnslXk6fVDySBrT0BVqozLDdmKY/qxgkDD4JtOQcU2vXc3e7jh7YyMxvuvE93E9OLvBqUrvajttj8xf3BA==}
+    hasBin: true
+    dependencies:
+      jsonc-parser: 3.2.0
+      request-light: 0.4.0
+      vscode-json-languageservice: 4.2.1
+      vscode-languageserver: 7.0.0
+      vscode-uri: 3.0.8
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /vscode-json-languageservice@4.2.1:
+    resolution: {integrity: sha512-xGmv9QIWs2H8obGbWg+sIPI/3/pFgj/5OWBhNzs00BkYQ9UaB2F6JJaGB/2/YOZJ3BvLXQTC4Q7muqU25QgAhA==}
+    dependencies:
+      jsonc-parser: 3.2.0
+      vscode-languageserver-textdocument: 1.0.11
+      vscode-languageserver-types: 3.17.5
+      vscode-nls: 5.2.0
+      vscode-uri: 3.0.8
+    dev: true
+
   /vscode-jsonrpc@5.0.1:
     resolution: {integrity: sha512-JvONPptw3GAQGXlVV2utDcHx0BiY34FupW/kI6mZ5x06ER5DdPG/tXWMVHjTNULF5uKPOUUD0SaXg5QaubJL0A==}
+    engines: {node: '>=8.0.0 || >=10.0.0'}
+    dev: true
+
+  /vscode-jsonrpc@6.0.0:
+    resolution: {integrity: sha512-wnJA4BnEjOSyFMvjZdpiOwhSq9uDoK8e/kpRJDTaMYzwlkrhG1fwDIZI94CLsLzlCK5cIbMMtFlJlfR57Lavmg==}
     engines: {node: '>=8.0.0 || >=10.0.0'}
     dev: true
 
   /vscode-jsonrpc@8.2.0:
     resolution: {integrity: sha512-C+r0eKJUIfiDIfwJhria30+TYWPtuHJXHtI7J0YlOmKAo7ogxP20T0zxB7HZQIFhIyvoBPwWskjxrvAtfjyZfA==}
     engines: {node: '>=14.0.0'}
+    dev: true
+
+  /vscode-languageserver-protocol@3.16.0:
+    resolution: {integrity: sha512-sdeUoAawceQdgIfTI+sdcwkiK2KU+2cbEYA0agzM2uqaUy2UpnnGHtWTHVEtS0ES4zHU0eMFRGN+oQgDxlD66A==}
+    dependencies:
+      vscode-jsonrpc: 6.0.0
+      vscode-languageserver-types: 3.16.0
     dev: true
 
   /vscode-languageserver-protocol@3.17.5:
@@ -7586,8 +7690,27 @@ packages:
     resolution: {integrity: sha512-X+8T3GoiwTVlJbicx/sIAF+yuJAqz8VvwJyoMVhwEMoEKE/fkDmrqUgDMyBECcM2A2frVZIUj5HI/ErRXCfOeA==}
     dev: true
 
+  /vscode-languageserver-types@3.16.0:
+    resolution: {integrity: sha512-k8luDIWJWyenLc5ToFQQMaSrqCHiLwyKPHKPQZ5zz21vM+vIVUSvsRpcbiECH4WR88K2XZqc4ScRcZ7nk/jbeA==}
+    dev: true
+
   /vscode-languageserver-types@3.17.5:
     resolution: {integrity: sha512-Ld1VelNuX9pdF39h2Hgaeb5hEZM2Z3jUrrMgWQAu82jMtZp7p3vJT3BzToKtZI7NgQssZje5o0zryOrhQvzQAg==}
+    dev: true
+
+  /vscode-languageserver@7.0.0:
+    resolution: {integrity: sha512-60HTx5ID+fLRcgdHfmz0LDZAXYEV68fzwG0JWwEPBode9NuMYTIxuYXPg4ngO8i8+Ou0lM7y6GzaYWbiDL0drw==}
+    hasBin: true
+    dependencies:
+      vscode-languageserver-protocol: 3.16.0
+    dev: true
+
+  /vscode-nls@4.1.2:
+    resolution: {integrity: sha512-7bOHxPsfyuCqmP+hZXscLhiHwe7CSuFE4hyhbs22xPIhQ4jv99FcR4eBzfYYVLP356HNFpdvz63FFb/xw6T4Iw==}
+    dev: true
+
+  /vscode-nls@5.2.0:
+    resolution: {integrity: sha512-RAaHx7B14ZU04EU31pT+rKz2/zSl7xMsfIZuo8pd+KZO6PXtQmpevpq3vxvWNcrGbdmhM/rr5Uw5Mz+NBfhVng==}
     dev: true
 
   /vscode-uri@3.0.8:

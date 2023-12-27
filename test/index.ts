@@ -1,6 +1,5 @@
+import { double } from '@functorfactory/create-lib';
 import { describe, expect, it } from '@jest/globals';
-
-import { double } from '../src/index';
 
 describe('double', () => {
   it('should double a number', () => {

@@ -44,6 +44,10 @@
       {
         "name": "typescript-eslint-language-service"
       }
-    ]
+    ],
+    "paths": {
+      "@functorfactory/create-lib": ["./src/index.ts"],
+      "@functorfactory/create-lib/*": ["./src/*"]
+    }
   }
 }
