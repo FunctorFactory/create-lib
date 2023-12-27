@@ -1,12 +1,11 @@
 <!-- Title -->
 <h1 align="center">
-  eslint-config
+  create-lib
 </h1>
 
 <!-- Description -->
 <h4 align="center"> 
-  The <a href="https://eslint.org/docs/latest/extend/shareable-configs">shareable configuration</a>
-  for <a href="https://eslint.org/">ESLint</a> used in all Functor Factory projects
+  Generate a new library project
 </h4>
 
 <!-- Badges -->
@@ -38,7 +37,7 @@
   <a href="#license">License</a>
 </p>
 
-# Init Script for Functor Factory NPM Packages
+# @functorfactory/create-lib
 
 [API Docs](https://functorfactory.github.io/create-lib/)
 
@@ -53,4 +52,3 @@ WIP
 ## License
 
 GPL-3.0 Or Later
-

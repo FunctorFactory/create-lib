@@ -1,10 +1,9 @@
-import config from "@functorfactory/eslint-config";
-import effect from '@effect/eslint-plugin';
+import config from '@functorfactory/eslint-config';
 
 export default [
   ...config,
   {
-    files: ["**/*.ts", "**/*.tsx"],
+    files: ['**/*.ts', '**/*.tsx'],
     languageOptions: {
       parserOptions: {
         project: ['tsconfig.test.json'],
