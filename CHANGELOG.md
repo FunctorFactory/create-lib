@@ -1,5 +1,11 @@
 # create-lib
 
+## 0.1.0-next.5
+
+### Patch Changes
+
+- [#7](https://github.com/FunctorFactory/create-lib/pull/7) [`010ba73`](https://github.com/FunctorFactory/create-lib/commit/010ba73f1da9e8f23a5857f6a5d36b4cd30ae9ce) Thanks [@j-shilling](https://github.com/j-shilling)! - Add formatting and spell checking
+
 ## 0.1.0-next.4
 
 ### Patch Changes
