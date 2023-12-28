@@ -1,6 +1,6 @@
 {
   "name": "@functorfactory/create-lib",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Generate a new library project",
   "type": "module",
   "main": "index.js",
